@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system</title>
+    <link rel="icon" href="imgs/login.png" />
+      <!-- *========|> Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+          rel="stylesheet" />
+
+    <!-- *Bootstrap style sheet<============ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- &============>Fontawesome style sheet<============ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ?============>Main style sheet<============ -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <form>
+        <div class="smart-app d-flex justify-content-center align-items-center min-vh-100 bg-main  ">
+            <div class=" login w-65 p-5">
+                <h1 class=" text-capitalize text-center ">smart login system</h1>
+                <div class="form d-flex flex-column">
+                    <input class="border border-1 rounded-2 form-control my-2 " type="email" id="signinEmail"
+                        placeholder="Enter your email" autocomplete="on">
+                        <div class="position-relative">
+                            <input class="form-control my-2" type="password" id="signinpass" autocomplete="on" placeholder="Enter your password">
+                            <i id="togglePass" class="fa-regular fa-eye position-absolute end-0 top-50 translate-middle-y me-3" style="cursor: pointer;"></i>
+                          </div>
+                          <div class="form-check my-2 d-flex align-items-center gap-2">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                          </div>
+                          
+                          
+    
+                    <p class="text-danger" id="ErrorMsg"></p>
+                    <p class="text-success" id="succesMsg"></p>
+    
+                    <button type="button" id="login" class="loginBtn btn btn-outline-info">Login</button>
+                    <p class="text-center text-white mt-3">Don’t have an account?<a href="signup.html"> Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+
+</html>

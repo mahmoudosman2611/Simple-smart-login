@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system</title>
+    <link rel="icon" href="imgs/login.png" />
+
+      <!-- *========|> Google Fonts -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet" />
+  
+    <!-- *Bootstrap style sheet<============ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- &============>Fontawesome style sheet<============ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ?============>Main style sheet<============ -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <form>
+        <div class="smart-app d-flex justify-content-center align-items-center min-vh-100 bg-main  ">
+
+            <div class=" login shadow-lg w-65 p-5">
+                <h1 class=" text-capitalize text-center ">smart login system</h1>
+                <div class="form d-flex flex-column">
+                    <input class="border border-1 rounded-2 form-control my-2 " type="text" id="userName"
+                        placeholder="Enter your first name" required autocomplete="on"
+                        oninput="validate(userNameRegex, userName)">
+                    <input class="border border-1 rounded-2 form-control my-2 " type="email" id="userEmail"
+                        placeholder="Enter your email" required autocomplete="on"
+                        oninput="validate(userEmailRegex, userEmail)">
+                    <div class="position-relative">
+                        <input class="form-control my-2" type="password" id="userPass" autocomplete="on"
+                            placeholder="Enter your password" oninput="validate(userPassRegex, userPass)">
+                        <i id="togglePass"
+                            class="fa-regular fa-eye position-absolute end-0 top-50 translate-middle-y me-3"
+                            style="cursor: pointer;"></i>
+                    </div>
+
+
+                    <p class="text-danger" id="ErrorMsg"></p>
+                    <button type="button" id="signUp" class=" loginBtn btn btn-outline-info">sign up</button>
+                    <p class="text-center text-white mt-3">I have an account <a href="index.html">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

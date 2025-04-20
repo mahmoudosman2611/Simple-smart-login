@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system</title>
+    <link rel="icon" href="imgs/login.png" />
+
+      <!-- *========|> Google Fonts -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet" />
+  
+
+    <!-- *Bootstrap style sheet<============ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- &============>Fontawesome style sheet<============ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ?============>Main style sheet<============ -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar shadow-lg text-white">
+        <div class="container-fluid ">
+            <div class="d-flex align-items-center justify-content-center gap-2 ">
+                
+                <a class="navbar-brand navWelcome text-white fs-3 fw-bold me-0" href="#">
+
+                    Smart Login
+                </a>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+
+            <button class="btnOut btn text-white" id="btnLogOut">Log Out</button>
+        </div>
+    </nav>
+    <div class="smart-app d-flex justify-content-center align-items-center min-vh-100 bg-main welcomeText  ">
+        <div class=" login shadow-lg w-65">
+            <p class="text-center welcomeText"><span id="welcome"></span></p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
